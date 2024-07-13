@@ -15,6 +15,9 @@ public class MyConnectionTest {
         ResultSet resultset=connection.getResultSet("select * from actor;");
 
         while (resultset.next()){
+            if (resultset == null) {
+                
+            }
 
 
             System.out.println(resultset.getString(1) + "--" + resultset.getString(2));
